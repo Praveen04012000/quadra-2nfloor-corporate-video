@@ -1,0 +1,996 @@
+[
+ {
+  "s": 1,
+  "t0": 0,
+  "t1": 3,
+  "kind": "clip",
+  "src": "qf/shot-01.mp4",
+  "source": "s01-quadra-sunrise (1).mp4",
+  "in": 0.4,
+  "rate": 1,
+  "logo": true
+ },
+ {
+  "s": 1,
+  "t0": 3,
+  "t1": 5.5,
+  "kind": "clip",
+  "src": "qf/shot-02.mp4",
+  "source": "C5351.MP4",
+  "in": 1,
+  "rate": 0.5,
+  "kicker": "Technology is evolving faster than ever"
+ },
+ {
+  "s": 1,
+  "t0": 5.5,
+  "t1": 8,
+  "kind": "clip",
+  "src": "qf/shot-03.mp4",
+  "source": "C5548.MP4",
+  "in": 2,
+  "rate": 0.5
+ },
+ {
+  "s": 1,
+  "t0": 8,
+  "t1": 10.5,
+  "kind": "clip",
+  "src": "qf/shot-04.mp4",
+  "source": "C5517.MP4",
+  "in": 1,
+  "rate": 0.5,
+  "kicker": "Measured by what businesses achieve"
+ },
+ {
+  "s": 1,
+  "t0": 10.5,
+  "t1": 13.5,
+  "kind": "clip",
+  "src": "qf/shot-05.mp4",
+  "source": "C5444.MP4",
+  "in": 12,
+  "rate": 0.5
+ },
+ {
+  "s": 1,
+  "t0": 13.5,
+  "t1": 16,
+  "kind": "clip",
+  "src": "qf/shot-06.mp4",
+  "source": "C5473.MP4",
+  "in": 30,
+  "rate": 0.5,
+  "kicker": "Ambition into measurable outcomes",
+  "chips": [
+   "Cloud",
+   "AI",
+   "Security"
+  ]
+ },
+ {
+  "s": 1,
+  "t0": 16,
+  "t1": 20,
+  "kind": "card",
+  "text": "Building the Intelligent Enterprise."
+ },
+ {
+  "s": 2,
+  "t0": 20,
+  "t1": 23,
+  "kind": "clip",
+  "src": "qf/shot-08.mp4",
+  "source": "C5473.MP4",
+  "in": 16,
+  "rate": 0.5,
+  "text": "Cloud Modernization."
+ },
+ {
+  "s": 2,
+  "t0": 23,
+  "t1": 25.5,
+  "kind": "clip",
+  "src": "qf/shot-09.mp4",
+  "source": "C5472.MP4",
+  "in": 30,
+  "rate": 0.5,
+  "chips": [
+   "Scalable",
+   "Resilient",
+   "Ready for what's next"
+  ]
+ },
+ {
+  "s": 2,
+  "t0": 25.5,
+  "t1": 27.5,
+  "kind": "clip",
+  "src": "qf/shot-10.mp4",
+  "source": "C5544.MP4",
+  "in": 12,
+  "rate": 0.5,
+  "kicker": "Modern cloud foundations"
+ },
+ {
+  "s": 2,
+  "t0": 27.5,
+  "t1": 30,
+  "kind": "partners"
+ },
+ {
+  "s": 3,
+  "t0": 30,
+  "t1": 33,
+  "kind": "clip",
+  "src": "qf/shot-12.mp4",
+  "source": "C5531.MP4",
+  "in": 5,
+  "rate": 0.5,
+  "text": "AI & Data Transformation."
+ },
+ {
+  "s": 3,
+  "t0": 33,
+  "t1": 35.5,
+  "kind": "clip",
+  "src": "qf/shot-13.mp4",
+  "source": "C5444.MP4",
+  "in": 9,
+  "rate": 0.5,
+  "kicker": "From isolated experiments…"
+ },
+ {
+  "s": 3,
+  "t0": 35.5,
+  "t1": 38,
+  "kind": "clip",
+  "src": "qf/shot-14.mp4",
+  "source": "C5458.MP4",
+  "in": 5,
+  "rate": 0.5,
+  "kicker": "…to everyday business operations"
+ },
+ {
+  "s": 3,
+  "t0": 38,
+  "t1": 40,
+  "kind": "clip",
+  "src": "qf/shot-15.mp4",
+  "source": "C5450.MP4",
+  "in": 12,
+  "rate": 0.5,
+  "kicker": "Enterprise data into intelligence"
+ },
+ {
+  "s": 4,
+  "t0": 40,
+  "t1": 43,
+  "kind": "clip",
+  "src": "qf/shot-16.mp4",
+  "source": "C5544.MP4",
+  "in": 2,
+  "rate": 0.5,
+  "text": "Enterprise Cybersecurity."
+ },
+ {
+  "s": 4,
+  "t0": 43,
+  "t1": 45.5,
+  "kind": "clip",
+  "src": "qf/shot-17.mp4",
+  "source": "C5472.MP4",
+  "in": 8,
+  "rate": 0.5,
+  "chips": [
+   "Proactive defence",
+   "Continuous monitoring",
+   "Protection in every layer"
+  ]
+ },
+ {
+  "s": 4,
+  "t0": 45.5,
+  "t1": 48,
+  "kind": "clip",
+  "src": "qf/shot-18.mp4",
+  "source": "C5452.MP4",
+  "in": 6,
+  "rate": 0.5
+ },
+ {
+  "s": 4,
+  "t0": 48,
+  "t1": 50,
+  "kind": "clip",
+  "src": "qf/shot-19.mp4",
+  "source": "C5473.MP4",
+  "in": 24,
+  "rate": 0.5
+ },
+ {
+  "s": 5,
+  "t0": 50,
+  "t1": 53,
+  "kind": "clip",
+  "src": "qf/shot-20.mp4",
+  "source": "C5444.MP4",
+  "in": 2,
+  "rate": 0.5,
+  "text": "Workforce Transformation.",
+  "logos": [
+   "m365.png",
+   "copilot.png"
+  ]
+ },
+ {
+  "s": 5,
+  "t0": 53,
+  "t1": 55.5,
+  "kind": "clip",
+  "src": "qf/shot-21.mp4",
+  "source": "c5538.mp4",
+  "in": 12,
+  "rate": 0.5,
+  "kicker": "Empowering people to work smarter"
+ },
+ {
+  "s": 5,
+  "t0": 55.5,
+  "t1": 58,
+  "kind": "clip",
+  "src": "qf/shot-22.mp4",
+  "source": "C5485.MP4",
+  "in": 14,
+  "rate": 0.5,
+  "kicker": "Secure, AI-enabled productivity",
+  "logos": [
+   "m365.png",
+   "copilot.png"
+  ]
+ },
+ {
+  "s": 5,
+  "t0": 58,
+  "t1": 60,
+  "kind": "clip",
+  "src": "qf/shot-23.mp4",
+  "source": "C5460.MP4",
+  "in": 9,
+  "rate": 0.5,
+  "kicker": "In the flow of work"
+ },
+ {
+  "s": 6,
+  "t0": 60,
+  "t1": 63,
+  "kind": "card",
+  "text": "Why Quadra"
+ },
+ {
+  "s": 6,
+  "t0": 63,
+  "t1": 67,
+  "kind": "clip",
+  "src": "qf/shot-25.mp4",
+  "source": "s01-quadra-sunrise (1).mp4",
+  "in": 0,
+  "rate": 1,
+  "text": "Years",
+  "num": "25"
+ },
+ {
+  "s": 6,
+  "t0": 67,
+  "t1": 71,
+  "kind": "clip",
+  "src": "qf/shot-26.mp4",
+  "source": "C5527.MP4",
+  "in": 0.5,
+  "rate": 0.5,
+  "text": "Awards",
+  "num": "100+"
+ },
+ {
+  "s": 6,
+  "t0": 71,
+  "t1": 75,
+  "kind": "clip",
+  "src": "qf/shot-27.mp4",
+  "source": "C5450.MP4",
+  "in": 1,
+  "rate": 0.5,
+  "text": "Certifications",
+  "num": "1,000+"
+ },
+ {
+  "s": 6,
+  "t0": 75,
+  "t1": 79,
+  "kind": "clip",
+  "src": "qf/shot-28.mp4",
+  "source": "C5515.MP4",
+  "in": 6,
+  "rate": 0.5,
+  "text": "Customers",
+  "num": "3,000+"
+ },
+ {
+  "s": 6,
+  "t0": 79,
+  "t1": 82,
+  "kind": "partners"
+ },
+ {
+  "s": 6,
+  "t0": 82,
+  "t1": 85,
+  "kind": "clip",
+  "src": "qf/shot-30.mp4",
+  "source": "C5363.MP4",
+  "in": 6,
+  "rate": 0.5,
+  "kicker": "The people who architect the solution remain accountable"
+ },
+ {
+  "s": 7,
+  "t0": 85,
+  "t1": 88.5,
+  "kind": "clip",
+  "src": "qf/shot-31.mp4",
+  "source": "C5504.MP4",
+  "in": 2,
+  "rate": 0.5,
+  "kicker": "Technology that works for the people using it"
+ },
+ {
+  "s": 7,
+  "t0": 88.5,
+  "t1": 92,
+  "kind": "card",
+  "text": "IntelliXperience",
+  "brand": "intellixperience.png"
+ },
+ {
+  "s": 7,
+  "t0": 92,
+  "t1": 95.5,
+  "kind": "clip",
+  "src": "qf/shot-33.mp4",
+  "source": "C5473.MP4",
+  "in": 36,
+  "rate": 0.5,
+  "chips": [
+   "Simpler interactions",
+   "Productive teams",
+   "Connected experiences"
+  ],
+  "logos": [
+   "intellixperience.png"
+  ]
+ },
+ {
+  "s": 7,
+  "t0": 95.5,
+  "t1": 99.5,
+  "kind": "clip",
+  "src": "qf/shot-34.mp4",
+  "source": "C5444.MP4",
+  "in": 15,
+  "rate": 0.5
+ },
+ {
+  "s": 7,
+  "t0": 99.5,
+  "t1": 103,
+  "kind": "clip",
+  "src": "qf/shot-35.mp4",
+  "source": "C5544.MP4",
+  "in": 7,
+  "rate": 0.5,
+  "kicker": "Supporting the way business gets done",
+  "logos": [
+   "intellixperience.png"
+  ]
+ },
+ {
+  "s": 7,
+  "t0": 103,
+  "t1": 110,
+  "kind": "clip",
+  "src": "qf/shot-36.mp4",
+  "source": "c5538.mp4",
+  "in": 20,
+  "rate": 0.5,
+  "text": "Built Around the Enterprise Experience.",
+  "logos": [
+   "intellixperience.png"
+  ]
+ },
+ {
+  "s": 8,
+  "t0": 110,
+  "t1": 114,
+  "kind": "clip",
+  "src": "qf/shot-37.mp4",
+  "source": "C5363.MP4",
+  "in": 14,
+  "rate": 0.5,
+  "kicker": "Confidence in technology is essential"
+ },
+ {
+  "s": 8,
+  "t0": 114,
+  "t1": 117.5,
+  "kind": "card",
+  "text": "IntelliAssure",
+  "brand": "intelliassure.png"
+ },
+ {
+  "s": 8,
+  "t0": 117.5,
+  "t1": 121,
+  "kind": "clip",
+  "src": "qf/shot-39.mp4",
+  "source": "C5472.MP4",
+  "in": 18,
+  "rate": 0.5,
+  "chips": [
+   "Reliability",
+   "Control",
+   "Accountability"
+  ],
+  "logos": [
+   "intelliassure.png"
+  ]
+ },
+ {
+  "s": 8,
+  "t0": 121,
+  "t1": 125,
+  "kind": "clip",
+  "src": "qf/shot-40.mp4",
+  "source": "C5514.MP4",
+  "in": 10,
+  "rate": 0.5
+ },
+ {
+  "s": 8,
+  "t0": 125,
+  "t1": 129,
+  "kind": "clip",
+  "src": "qf/shot-41.mp4",
+  "source": "C5458.MP4",
+  "in": 14,
+  "rate": 0.5,
+  "kicker": "Foundations ready to support the business",
+  "logos": [
+   "intelliassure.png"
+  ]
+ },
+ {
+  "s": 8,
+  "t0": 129,
+  "t1": 135,
+  "kind": "clip",
+  "src": "qf/shot-42.mp4",
+  "source": "C5393.MP4",
+  "in": 4,
+  "rate": 0.5,
+  "text": "Confidence for Enterprise Operations.",
+  "logos": [
+   "intelliassure.png"
+  ]
+ },
+ {
+  "s": 9,
+  "t0": 135,
+  "t1": 137.5,
+  "kind": "card",
+  "text": "Cyber threats don't stop."
+ },
+ {
+  "s": 9,
+  "t0": 137.5,
+  "t1": 140,
+  "kind": "card",
+  "text": "Neither should your defence."
+ },
+ {
+  "s": 9,
+  "t0": 140,
+  "t1": 144,
+  "kind": "bluforge",
+  "sub": "Microsoft MISA-verified managed cyber-defence"
+ },
+ {
+  "s": 9,
+  "t0": 144,
+  "t1": 147,
+  "kind": "clip",
+  "src": "qf/shot-46.mp4",
+  "source": "C5544.MP4",
+  "in": 13,
+  "rate": 0.5,
+  "kicker": "24×7 security operations",
+  "logos": [
+   "bluforge-lockup.png"
+  ]
+ },
+ {
+  "s": 9,
+  "t0": 147,
+  "t1": 151,
+  "kind": "clip",
+  "src": "qf/shot-47.mp4",
+  "source": "C5452.MP4",
+  "in": 18,
+  "rate": 0.5,
+  "kicker": "Intelligent threat detection",
+  "logos": [
+   "bluforge-lockup.png"
+  ]
+ },
+ {
+  "s": 9,
+  "t0": 151,
+  "t1": 155,
+  "kind": "clip",
+  "src": "qf/shot-48.mp4",
+  "source": "C5472.MP4",
+  "in": 2,
+  "rate": 0.5,
+  "kicker": "Coordinated incident response",
+  "logos": [
+   "bluforge-lockup.png"
+  ]
+ },
+ {
+  "s": 9,
+  "t0": 155,
+  "t1": 160,
+  "kind": "clip",
+  "src": "qf/shot-49.mp4",
+  "source": "C5473.MP4",
+  "in": 4,
+  "rate": 0.5,
+  "text": "BluForge — One Unified Defence.",
+  "chips": [
+   "Identity",
+   "Data",
+   "The enterprise as one"
+  ]
+ },
+ {
+  "s": 10,
+  "t0": 160,
+  "t1": 163.5,
+  "kind": "clip",
+  "src": "qf/shot-50.mp4",
+  "source": "C5353.MP4",
+  "in": 1,
+  "rate": 0.5,
+  "kicker": "Changing the way work gets done"
+ },
+ {
+  "s": 10,
+  "t0": 163.5,
+  "t1": 167,
+  "kind": "card",
+  "text": "Quadra AIR",
+  "sub": "AI-In-Residence",
+  "brand": "quadra-air.png"
+ },
+ {
+  "s": 10,
+  "t0": 167,
+  "t1": 171,
+  "kind": "clip",
+  "src": "qf/shot-52.mp4",
+  "source": "C5396.MP4",
+  "in": 1,
+  "rate": 0.5,
+  "kicker": "Engineers directly in your enterprise"
+ },
+ {
+  "s": 10,
+  "t0": 171,
+  "t1": 175,
+  "kind": "clip",
+  "src": "qf/shot-53.mp4",
+  "source": "C5460.MP4",
+  "in": 15,
+  "rate": 0.5,
+  "chips": [
+   "Identify opportunities",
+   "Redesign workflows"
+  ]
+ },
+ {
+  "s": 10,
+  "t0": 175,
+  "t1": 179,
+  "kind": "clip",
+  "src": "qf/shot-54.mp4",
+  "source": "C5458.MP4",
+  "in": 18,
+  "rate": 0.5,
+  "chips": [
+   "Build governed AI for production"
+  ]
+ },
+ {
+  "s": 10,
+  "t0": 179,
+  "t1": 185,
+  "kind": "clip",
+  "src": "qf/shot-55.mp4",
+  "source": "C5472.MP4",
+  "in": 22,
+  "rate": 0.5,
+  "text": "Engineering AI Into the Business.",
+  "chips": [
+   "Real workflows",
+   "Real adoption",
+   "Real business outcomes"
+  ]
+ },
+ {
+  "s": 11,
+  "t0": 185,
+  "t1": 189,
+  "kind": "clip",
+  "src": "qf/shot-56.mp4",
+  "source": "C5556 (1).MP4",
+  "in": 0.3,
+  "rate": 0.5,
+  "step": 1,
+  "kicker": "Disconnected systems slow decisions"
+ },
+ {
+  "s": 11,
+  "t0": 189,
+  "t1": 193,
+  "kind": "clip",
+  "src": "qf/shot-57.mp4",
+  "source": "C5353.MP4",
+  "in": 6,
+  "rate": 0.5,
+  "step": 1,
+  "kicker": "More operational effort"
+ },
+ {
+  "s": 11,
+  "t0": 193,
+  "t1": 197,
+  "kind": "clip",
+  "src": "qf/shot-58.mp4",
+  "source": "C5485.MP4",
+  "in": 18,
+  "rate": 0.5,
+  "step": 2,
+  "chips": [
+   "Cloud modernization",
+   "Data foundations",
+   "Managed operations"
+  ]
+ },
+ {
+  "s": 11,
+  "t0": 197,
+  "t1": 201,
+  "kind": "clip",
+  "src": "qf/shot-59.mp4",
+  "source": "C5450.MP4",
+  "in": 6,
+  "rate": 0.5,
+  "step": 2,
+  "kicker": "Brought together by Quadra"
+ },
+ {
+  "s": 11,
+  "t0": 201,
+  "t1": 205,
+  "kind": "clip",
+  "src": "qf/shot-60.mp4",
+  "source": "C5396.MP4",
+  "in": 12,
+  "rate": 0.5,
+  "step": 3,
+  "chips": [
+   "Less complexity",
+   "Better visibility",
+   "Faster decisions"
+  ]
+ },
+ {
+  "s": 12,
+  "t0": 205,
+  "t1": 209,
+  "kind": "clip",
+  "src": "qf/shot-61.mp4",
+  "source": "C5544.MP4",
+  "in": 4,
+  "rate": 0.5,
+  "step": 1,
+  "kicker": "Security and continuity can't be an afterthought"
+ },
+ {
+  "s": 12,
+  "t0": 209,
+  "t1": 213,
+  "kind": "clip",
+  "src": "qf/shot-62.mp4",
+  "source": "C5452.MP4",
+  "in": 12,
+  "rate": 0.5,
+  "step": 2,
+  "chips": [
+   "Proactive protection",
+   "Continuous monitoring",
+   "Accountable managed services"
+  ]
+ },
+ {
+  "s": 12,
+  "t0": 213,
+  "t1": 217,
+  "kind": "clip",
+  "src": "qf/shot-63.mp4",
+  "source": "C5472.MP4",
+  "in": 34,
+  "rate": 0.5,
+  "step": 2,
+  "kicker": "Continuous monitoring"
+ },
+ {
+  "s": 12,
+  "t0": 217,
+  "t1": 221,
+  "kind": "clip",
+  "src": "qf/shot-64.mp4",
+  "source": "C5369.MP4",
+  "in": 2,
+  "rate": 0.5,
+  "step": 3,
+  "chips": [
+   "Stronger resilience",
+   "Confident response"
+  ]
+ },
+ {
+  "s": 12,
+  "t0": 221,
+  "t1": 225,
+  "kind": "clip",
+  "src": "qf/shot-65.mp4",
+  "source": "C5515.MP4",
+  "in": 14,
+  "rate": 0.5,
+  "step": 3,
+  "kicker": "Focused on what comes next"
+ },
+ {
+  "s": 13,
+  "t0": 225,
+  "t1": 228.5,
+  "kind": "card",
+  "text": "Experience Our CoE"
+ },
+ {
+  "s": 13,
+  "t0": 228.5,
+  "t1": 232.5,
+  "kind": "clip",
+  "src": "qf/shot-67.mp4",
+  "source": "C5548.MP4",
+  "in": 6,
+  "rate": 0.5,
+  "kicker": "Centre of Excellence for Microsoft AI and Security",
+  "logos": [
+   "microsoft.svg"
+  ]
+ },
+ {
+  "s": 13,
+  "t0": 232.5,
+  "t1": 236.5,
+  "kind": "clip",
+  "src": "qf/shot-68.mp4",
+  "source": "C5485.MP4",
+  "in": 6,
+  "rate": 0.5,
+  "kicker": "Ideas become live demonstrations"
+ },
+ {
+  "s": 13,
+  "t0": 236.5,
+  "t1": 240.5,
+  "kind": "clip",
+  "src": "qf/shot-69.mp4",
+  "source": "C5396.MP4",
+  "in": 6,
+  "rate": 0.5,
+  "kicker": "Technology meets real business challenges"
+ },
+ {
+  "s": 13,
+  "t0": 240.5,
+  "t1": 244,
+  "kind": "clip",
+  "src": "qf/shot-70.mp4",
+  "source": "C5473.MP4",
+  "in": 10,
+  "rate": 0.5,
+  "chips": [
+   "Practical applications of AI"
+  ]
+ },
+ {
+  "s": 13,
+  "t0": 244,
+  "t1": 247.5,
+  "kind": "clip",
+  "src": "qf/shot-71.mp4",
+  "source": "C5452.MP4",
+  "in": 22,
+  "rate": 0.5,
+  "chips": [
+   "Modern security capabilities"
+  ]
+ },
+ {
+  "s": 13,
+  "t0": 247.5,
+  "t1": 251.5,
+  "kind": "clip",
+  "src": "qf/shot-72.mp4",
+  "source": "c5538.mp4",
+  "in": 4,
+  "rate": 0.5,
+  "chips": [
+   "Workshops",
+   "Conversations",
+   "Problem-solving"
+  ]
+ },
+ {
+  "s": 13,
+  "t0": 251.5,
+  "t1": 260,
+  "kind": "clip",
+  "src": "qf/shot-73.mp4",
+  "source": "C5517.MP4",
+  "in": 3,
+  "rate": 0.5,
+  "text": "Experience Innovation. Explore What's Possible."
+ },
+ {
+  "s": 14,
+  "t0": 260,
+  "t1": 264,
+  "kind": "clip",
+  "src": "qf/shot-74.mp4",
+  "source": "C5359.MP4",
+  "in": 2,
+  "rate": 0.5,
+  "kicker": "Responsible for making it work"
+ },
+ {
+  "s": 14,
+  "t0": 264,
+  "t1": 265.5,
+  "kind": "clip",
+  "src": "qf/shot-75.mp4",
+  "source": "C5363.MP4",
+  "in": 20,
+  "rate": 0.5,
+  "text": "Architects."
+ },
+ {
+  "s": 14,
+  "t0": 265.5,
+  "t1": 267,
+  "kind": "clip",
+  "src": "qf/shot-76.mp4",
+  "source": "C5458.MP4",
+  "in": 8,
+  "rate": 0.5,
+  "text": "Engineers."
+ },
+ {
+  "s": 14,
+  "t0": 267,
+  "t1": 268.5,
+  "kind": "clip",
+  "src": "qf/shot-77.mp4",
+  "source": "C5544.MP4",
+  "in": 15,
+  "rate": 0.5,
+  "text": "Security specialists."
+ },
+ {
+  "s": 14,
+  "t0": 268.5,
+  "t1": 270,
+  "kind": "clip",
+  "src": "qf/shot-78.mp4",
+  "source": "C5444.MP4",
+  "in": 19,
+  "rate": 0.5,
+  "text": "AI innovators."
+ },
+ {
+  "s": 14,
+  "t0": 270,
+  "t1": 274,
+  "kind": "clip",
+  "src": "qf/shot-79.mp4",
+  "source": "c5538.mp4",
+  "in": 25,
+  "rate": 0.5,
+  "chips": [
+   "Listen",
+   "Collaborate",
+   "Stay accountable"
+  ]
+ },
+ {
+  "s": 14,
+  "t0": 274,
+  "t1": 280,
+  "kind": "clip",
+  "src": "qf/shot-80.mp4",
+  "source": "C5504.MP4",
+  "in": 8,
+  "rate": 0.5,
+  "text": "Expertise That Delivers. People Who Stay Accountable."
+ },
+ {
+  "s": 15,
+  "t0": 280,
+  "t1": 283.5,
+  "kind": "clip",
+  "src": "qf/shot-81.mp4",
+  "source": "C5515.MP4",
+  "in": 18,
+  "rate": 0.5,
+  "kicker": "An ambition worth building toward"
+ },
+ {
+  "s": 15,
+  "t0": 283.5,
+  "t1": 287,
+  "kind": "clip",
+  "src": "qf/shot-82.mp4",
+  "source": "s01-quadra-sunrise (1).mp4",
+  "in": 0.2,
+  "rate": 1,
+  "kicker": "The next step begins with a conversation"
+ },
+ {
+  "s": 15,
+  "t0": 287,
+  "t1": 292,
+  "kind": "words",
+  "words": [
+   "Cloud.",
+   "AI.",
+   "Security.",
+   "One Architect."
+  ]
+ },
+ {
+  "s": 15,
+  "t0": 292,
+  "t1": 297,
+  "kind": "endLogo",
+  "text": "Architecting Ambition."
+ },
+ {
+  "s": 15,
+  "t0": 297,
+  "t1": 300,
+  "kind": "endCard"
+ }
+]

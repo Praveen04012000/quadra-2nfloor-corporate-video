@@ -1,0 +1,513 @@
+<title>Quadra Intro Storyboard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a production blueprint. Five numbered parts in the order the brief asks for; the storyboard itself is a vertical timeline of scenes, each a script block followed by beat-timed shot cards. Bright and cool like the treatment it describes. */
+:root {
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --surface-2: #eaf0f8;
+  --line: #d6dfeb;
+  --fg: #0d1b33;
+  --muted: #5b6b84;
+  --accent: #1f6feb;
+  --accent-soft: #dce9ff;
+  --navy: #0a1d3b;
+  --ok: #138a52;
+  --warn: #b26a00;
+  --display: "Raleway", "Segoe UI", Arial, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #0b1424; --surface: #111d33; --surface-2: #17263f; --line: #24375a; --fg: #e8eef8; --muted: #97a7c2; --accent: #5aa2ff; --accent-soft: #17325c; --navy: #06122a; --ok: #3fcf8e; --warn: #f0a83a; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #0b1424; --surface: #111d33; --surface-2: #17263f; --line: #24375a; --fg: #e8eef8; --muted: #97a7c2; --accent: #5aa2ff; --accent-soft: #17325c; --navy: #06122a; --ok: #3fcf8e; --warn: #f0a83a; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.6; }
+.wrap { max-width: 1320px; margin: 0 auto; padding-block: 32px 72px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 56px; }
+h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; line-height: 1.15; }
+h1 { font-size: clamp(30px, 4.4vw, 52px); font-weight: 800; letter-spacing: -0.01em; }
+h2 { font-size: clamp(22px, 2.6vw, 30px); font-weight: 800; }
+h3 { font-size: 17px; font-weight: 700; }
+p { margin: 0; }
+.lbl { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.muted { color: var(--muted); }
+a { color: var(--accent); }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+/* header */
+header { display: flex; flex-direction: column; gap: 18px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+.logo-chip { align-self: flex-start; background: var(--navy); border-radius: 10px; padding: 10px 16px; }
+.logo-chip img { height: 30px; display: block; }
+.lede { max-width: 70ch; font-size: 17px; color: var(--muted); }
+.specs { display: flex; flex-wrap: wrap; gap: 10px; }
+.spec { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; display: flex; flex-direction: column; min-width: 0; }
+.spec b { font-family: var(--display); font-size: 20px; }
+.spec span { font-size: 12px; color: var(--muted); }
+nav.toc { display: flex; flex-wrap: wrap; gap: 8px; }
+nav.toc a { text-decoration: none; font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--fg); }
+nav.toc a:hover, nav.toc a:focus-visible { background: var(--accent); color: #fff; outline: none; }
+
+section.part { display: flex; flex-direction: column; gap: 22px; scroll-margin-top: 16px; }
+.part-head { display: flex; flex-direction: column; gap: 6px; }
+
+/* creative direction */
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 16px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.panel ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+table.map { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.map th, table.map td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+table.map th { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+table.map td:first-child { font-weight: 600; width: 22%; }
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.swatches { display: flex; flex-wrap: wrap; gap: 10px; }
+.sw { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.sw i { width: 28px; height: 28px; border-radius: 6px; border: 1px solid var(--line); }
+.stat { display: flex; align-items: baseline; gap: 8px; }
+.stat b { font-family: var(--display); font-size: 26px; }
+
+/* storyboard */
+.scene { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 16px; }
+.sc-head { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 16px 28px; }
+@media (max-width: 860px) { .sc-head { grid-template-columns: 1fr; } }
+.sc-title { display: flex; flex-direction: column; gap: 8px; }
+.sc-title h3 { font-size: 24px; font-weight: 800; }
+.sc-title h3 span { color: var(--accent); margin-right: 10px; }
+.meter { display: flex; gap: 3px; }
+.meter i { width: 14px; height: 8px; border-radius: 2px; background: var(--surface-2); }
+.meter i.on { background: var(--accent); }
+.vo { border-left: 3px solid var(--accent); padding-left: 14px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 14px; }
+.shot { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.frame { position: relative; aspect-ratio: 16 / 9; max-width: 100%; background: var(--navy); overflow: hidden; container-type: inline-size; }
+.frame img.plate { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.frame .tag { position: absolute; top: 6%; left: 4%; font-family: var(--display); font-weight: 700; font-size: 3.4cqw; letter-spacing: .12em; text-transform: uppercase; color: #fff; background: rgba(10,29,59,.78); padding: 1.2cqw 2.2cqw; border-radius: 1.4cqw; }
+.frame .ov { position: absolute; left: 5%; right: 30%; bottom: 9%; font-family: var(--display); font-weight: 800; font-size: 4.6cqw; line-height: 1.15; color: #fff; text-shadow: 0 1px 8px rgba(10,29,59,.7); }
+.frame .wash { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,29,59,.78), rgba(10,29,59,.35) 45%, rgba(10,29,59,0) 70%); }
+.frame .glass { position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: 64%; background: rgba(255,255,255,.88); border-radius: 2cqw; padding: 3cqw; color: #0a1d3b; font-family: var(--display); font-weight: 700; font-size: 3.6cqw; line-height: 1.35; box-shadow: 0 2cqw 5cqw rgba(10,29,59,.35); }
+.frame.blur img.plate { filter: blur(3px) brightness(.9); scale: 1.05; }
+.card-white, .card-navy, .card-blue { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 6%; font-family: var(--display); font-weight: 800; font-size: 6cqw; line-height: 1.1; }
+.card-white { background: radial-gradient(90% 120% at 70% 50%, #e8f1ff, #ffffff 60%); color: #0a1d3b; }
+.card-navy { background: radial-gradient(110% 130% at 75% 40%, #123a73, #0a1d3b 62%); color: #fff; }
+.card-blue { background: linear-gradient(135deg, #1f6feb, #0f4fc2); color: #fff; }
+.card-white img, .card-navy img, .card-blue img { max-width: 80%; max-height: 42%; }
+.quad { position: absolute; right: -6%; top: 50%; translate: 0 -50%; width: 42%; aspect-ratio: 1; border-radius: 50%; background: conic-gradient(currentColor 0 24%, transparent 24% 25%, currentColor 25% 49%, transparent 49% 50%, currentColor 50% 74%, transparent 74% 75%, currentColor 75% 99%, transparent 99%); opacity: .12; }
+.sbody { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 8px; font-size: 13.5px; }
+.srow { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.srow b { font-family: var(--display); font-size: 15px; }
+.chip { display: inline-block; font-family: var(--mono); font-size: 11px; padding: 2px 8px; border-radius: 999px; background: var(--surface-2); color: var(--muted); }
+.kv { display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 4px 10px; }
+.kv dt { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding-top: 2px; }
+.kv dd { margin: 0; min-width: 0; }
+.todo { color: var(--warn); font-weight: 600; }
+
+/* transaction plan */
+.states { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 12px; }
+.state { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px; }
+.state .n { font-family: var(--display); font-weight: 800; font-size: 13px; color: var(--accent); letter-spacing: .1em; text-transform: uppercase; }
+.demo { background: var(--navy); border-radius: 12px; padding: 28px; display: grid; place-items: center; min-height: 190px; }
+.btn { position: relative; font-family: var(--display); font-weight: 700; font-size: 20px; color: #0a1d3b; background: #fff; border-radius: 999px; padding: 16px 34px; display: flex; align-items: center; gap: 12px; animation: press 4s infinite; }
+.btn .tick { width: 0; overflow: hidden; color: #138a52; animation: tick 4s infinite; }
+.btn::after { content: ""; position: absolute; inset: 0; border-radius: inherit; border: 3px solid #5aa2ff; opacity: 0; animation: ring 4s infinite; }
+@keyframes press { 0%, 18% { scale: 1; box-shadow: 0 0 0 0 rgba(90,162,255,0); } 26% { scale: 1.03; box-shadow: 0 0 30px 4px rgba(90,162,255,.55); } 34% { scale: .96; } 44%, 100% { scale: 1; } }
+@keyframes ring { 0%, 34% { opacity: 0; scale: 1; } 36% { opacity: .9; } 60%, 100% { opacity: 0; scale: 1.35; } }
+@keyframes tick { 0%, 40% { width: 0; } 48%, 90% { width: 24px; } 100% { width: 0; } }
+@media (prefers-reduced-motion: reduce) { .btn, .btn::after, .btn .tick { animation: none; } .btn .tick { width: 24px; } }
+
+/* charts */
+.chart { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; overflow-x: auto; }
+.chart svg { display: block; min-width: 720px; width: 100%; height: auto; }
+.chart text { fill: var(--muted); font-family: var(--mono); font-size: 11px; }
+.chart .bar { fill: var(--accent); }
+.chart .grid { stroke: var(--line); }
+.chart .line { stroke: var(--accent); fill: none; stroke-width: 2.5; }
+.chart .area { fill: var(--accent-soft); }
+.chart .hit { fill: var(--warn); }
+
+.open ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="logo-chip"><img src="brand/quadra-white.png" alt="Quadra"></div>
+    <span class="lbl">Phase 1 · storyboard for approval · no video produced yet</span>
+    <h1>Quadra corporate intro: storyboard and production blueprint</h1>
+    <p class="lede">An original treatment for the approved 5-minute script, cut from Quadra's own office footage. The reference sets the energy, motion language and audio mood; nothing is copied shot for shot. Voiceover and on-screen script wording are unchanged.</p>
+    <div class="specs">
+      <div class="spec"><b>05:00</b><span>Runtime</span></div>
+      <div class="spec"><b>15</b><span>Scenes</span></div>
+      <div class="spec"><b id="nShots">—</b><span>Shots</span></div>
+      <div class="spec"><b id="avgLen">—</b><span>Average shot</span></div>
+      <div class="spec"><b>96 BPM</b><span>Music, 2.5 s bars</span></div>
+      <div class="spec"><b>120</b><span>Bars</span></div>
+      <div class="spec"><b>27</b><span>Quadra source clips</span></div>
+    </div>
+    <nav class="toc" aria-label="Parts">
+      <a href="#direction">1 · Creative direction</a>
+      <a href="#storyboard">2 · Storyboard</a>
+      <a href="#transactions">3 · Transaction animation</a>
+      <a href="#editing">4 · Editing and transitions</a>
+      <a href="#music">5 · Music and sound</a>
+      <a href="#open">Open items</a>
+    </nav>
+  </header>
+
+  <!-- 1 -->
+  <section class="part" id="direction">
+    <div class="part-head"><span class="lbl">Part 1</span><h2>Creative-direction summary</h2></div>
+    <div class="grid2">
+      <div class="panel">
+        <h3>What the reference does</h3>
+        <p class="muted">Measured from the 89.5-second reference file.</p>
+        <div class="stat"><b>77</b><span class="muted">cuts, about one every 1.15 s (median 1.0 s)</span></div>
+        <div class="stat"><b>~100</b><span class="muted">BPM, steady corporate electronic, loudness flat from 0:05 to the end</span></div>
+        <ul>
+          <li>Bright, cool, high-key offices; blue-white grade; shallow depth of field and rack focus.</li>
+          <li>Section names on clean white cards, then a large circular wipe reveals the next space.</li>
+          <li>Picture-in-picture windows slide over a shot before the cut.</li>
+          <li>Pillars, doors and people crossing the lens act as natural wipes.</li>
+          <li>One executive walks through every space, which gives the film a thread.</li>
+          <li>Closing triad of bold words over footage, then the logo builds from simple shapes on brand blue.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>How Quadra's version answers it</h3>
+        <p class="muted">The same principles, with devices of Quadra's own.</p>
+        <ul>
+          <li><b>Quadrant wipe.</b> The Quadra mark is a circle in four quarters, so wipes are a white quarter-disc sweeping clockwise. This is our answer to the reference's circle wipe.</li>
+          <li><b>The architect thread.</b> The leader in the blue shirt (C5359, C5353, C5393, C5363) walks and watches through the film. He embodies "the people who architect the solution remain accountable".</li>
+          <li><b>Section cards with footage inside the letters</b> for the four big moments: the opening line, Why Quadra, the CoE and the products.</li>
+          <li><b>Glass UI panels</b> for every state change (shield, incident flow, workflow, checks, story tracker, CTA).</li>
+          <li><b>Logo build</b> from four quarter-discs that bounce in on the beat and lock into the Q mark.</li>
+          <li><b>Pace</b> of 1.25 to 2.5 s cuts (2 to 4 beats) in the energetic sections, with longer holds only for product moments and headlines. That keeps the reference's energy across 5 minutes without fatigue.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="panel">
+        <h3>Colour and grade</h3>
+        <div class="swatches">
+          <span class="sw"><i style="background:#ffffff"></i>White cards</span>
+          <span class="sw"><i style="background:#0a1d3b"></i>Quadra navy</span>
+          <span class="sw"><i style="background:#1f6feb"></i>Quadra blue</span>
+          <span class="sw"><i style="background:#7fb8ff"></i>Sky (accents)</span>
+          <span class="sw"><i style="background:#138a52"></i>Success</span>
+          <span class="sw"><i style="background:#e5a100"></i>Alert (security only)</span>
+        </div>
+        <p class="muted">Grade: lift exposure +0.2, cool white balance by about 300 K, saturation 95%, gentle S-curve. The orange office wall stays warm as a natural accent. No grain and no letterbox: full 16:9, clean and bright.</p>
+      </div>
+      <div class="panel">
+        <h3>Type and layout</h3>
+        <p><b style="font-family:var(--display)">Raleway 800</b> for headlines and section cards (Quadra's brand face). <b style="font-family:var(--display);font-weight:600">Raleway 600</b> for chips and labels.</p>
+        <p class="muted">Headlines lower-left on a navy wash, chapter tag top-left (scene number and name), logo top-right, product and partner logos on a white tile lower-right. UI panels sit centred on frosted glass over blurred footage. Safe area 80 px sides, 64 px top.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="part" id="storyboard">
+    <div class="part-head"><span class="lbl">Part 2</span><h2>Scene-by-scene storyboard</h2><p class="muted">Times are absolute (mm:ss.s). Beats are at 96 BPM (0.625 s). Footage names are files in Documents/AIG_corporate_Videos; the in-point is in source seconds. 50% speed comes from the 100 fps originals. Crops up to 2× keep full HD because the originals are 4K.</p></div>
+    <div id="scenes" style="display:flex;flex-direction:column;gap:40px"></div>
+  </section>
+
+  <!-- 3 -->
+  <section class="part" id="transactions">
+    <div class="part-head"><span class="lbl">Part 3</span><h2>Transaction-animation plan</h2>
+      <p class="muted" style="max-width:75ch">The reference has no payment-style transactions. Its state changes are carried by transitions: a window appears, grows and settles, and a card wipes away to reveal what is next. This plan applies one four-state model to every transition and every UI state change in the film, so each action reads as anticipation, action and confirmation.</p>
+    </div>
+    <div class="states">
+      <div class="state"><span class="n">1 · Anticipation</span><p>4–6 frames. The element scales to 97% or a glow ring appears; the music has a riser or pickup. It tells the eye where to look.</p></div>
+      <div class="state"><span class="n">2 · Action</span><p>10–16 frames, ease-out (0.16, 1, 0.3, 1). The move, wipe, fill or press. A whoosh or click lands on the frame the action starts.</p></div>
+      <div class="state"><span class="n">3 · Confirmation</span><p>6–8 frames. A 2–4% overshoot then settle, a tick draws, a pulse ring expands once. Lands on a beat with a soft confirm sound.</p></div>
+      <div class="state"><span class="n">4 · Success / settle</span><p>Holds at least 1 bar (2.5 s) or until the voiceover finishes the thought. Colour changes to blue or green; the element then exits with a 10-frame fade or hands off to the next wipe.</p></div>
+    </div>
+    <div class="grid2">
+      <div class="demo" aria-label="Looping example of the call-to-action states"><div class="btn">Start a conversation <span class="tick">✓</span></div></div>
+      <div class="panel"><h3>Example: the closing call to action (4:47.5)</h3><p class="muted">Glow on the button (anticipation), press to 96% on "the next step" (action), ripple ring and green tick (confirmation), then the button opens into the website and email chips (success). The loop on the left shows the timing at real speed.</p></div>
+    </div>
+    <div class="scroll"><table class="map" id="txTable"><thead><tr><th>Flow</th><th>Where</th><th>Anticipation</th><th>Action</th><th>Confirmation / success</th><th>Sound</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <!-- 4 -->
+  <section class="part" id="editing">
+    <div class="part-head"><span class="lbl">Part 4</span><h2>Editing and transition notes</h2></div>
+    <div class="chart" aria-label="Average shot length per scene"><svg id="paceChart" viewBox="0 0 900 220" role="img"></svg></div>
+    <div class="grid2">
+      <div class="panel">
+        <h3>Pace and cuts</h3>
+        <ul>
+          <li>Cut on beats: 2 beats (1.25 s) in montage passages, 4 beats (2.5 s) under headlines, 6–8 beats (3.75–5 s) for product and UI moments.</li>
+          <li>Every scene change lands on a bar line, because all scene lengths are multiples of 5 s (2 bars).</li>
+          <li>Faster in Scenes 1, 4, 9 and 14, slower in the two customer stories (the musical breakdown), then a rebuild into the CoE.</li>
+          <li>Cut on motion where possible: a turn of the head, a hand reaching, a door opening.</li>
+          <li>Never cut inside a word of the voiceover. Text appears 0.1–0.2 s before the word it matches.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Speed, zoom and crop</h3>
+        <ul>
+          <li>All office footage at 50% from 100 fps for smooth slow motion; the sunrise clip at 100%.</li>
+          <li>Speed ramps (100% → 40% → 100%) only on hero moments: 0:57.5 into the 1:00 drop, the awards slide, and the leader's walk at 4:20.</li>
+          <li>Punch-ins of 110–120% on the downbeat for dark-UI security shots; up to 2× crops are safe from the 4K originals.</li>
+          <li>A constant 3–6% push-in or lateral drift on every plate, alternating direction from shot to shot.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Transition library</h3>
+        <ul>
+          <li><b>Quadrant wipe</b>: scene and section changes (white quarter-disc, 18 frames, clockwise).</li>
+          <li><b>Window</b>: rounded inset of the next shot slides in for 8 frames, then expands to fill on the beat.</li>
+          <li><b>Foreground wipe</b>: a door, partition or passer-by in the footage; cut at the frame the frame is fully covered.</li>
+          <li><b>Hard cut</b>: inside scenes, always on a beat.</li>
+          <li><b>Dip</b>: to navy only before 2:15 (BluForge) and at the loop point.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Graphic overlays</h3>
+        <ul>
+          <li>Chapter tag on every footage shot (number and scene name).</li>
+          <li>Headlines and key lines rise word by word from a mask; chips pop in one per beat.</li>
+          <li>Logo tiles slide up lower-right whenever a product or partner is named.</li>
+          <li>Glass UI panels hold over blurred footage for state changes (see Part 3).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="part" id="music">
+    <div class="part-head"><span class="lbl">Part 5</span><h2>Background-music and sound-design direction</h2></div>
+    <div class="chart" aria-label="Music energy across the film with key hits"><svg id="energyChart" viewBox="0 0 900 220" role="img"></svg></div>
+    <div class="grid2">
+      <div class="panel">
+        <h3>Music brief</h3>
+        <ul>
+          <li><b>Tempo:</b> 96 BPM. That is close to the reference's ~100 BPM, and a bar of exactly 2.5 s makes every scene boundary fall on a bar line.</li>
+          <li><b>Mood:</b> bright, optimistic, confident modern corporate tech. Plucked synth arpeggio, airy pads, clean piano motif, soft four-on-the-floor kick, claps on 2 and 4 in the choruses.</li>
+          <li><b>Shape:</b> intro → build → drop at 1:00 → products → bigger, darker drop at 2:15 (BluForge) → breakdown for the stories (3:05–3:45) → rebuild → final chorus at 4:20 → resolve on the logo.</li>
+          <li><b>Source:</b> licensed production music with stems and a 5:00 edit, from Artlist, Musicbed, Epidemic Sound or Audio Network. Search for "inspiring corporate technology", "modern innovation electronic", 94–100 BPM, "with stems". Avoid anything that imitates the reference track.</li>
+          <li><b>Mix:</b> voiceover at about −14 LUFS integrated for the final mix. Music ducked 10–12 dB under speech with a 200 ms release, and up 4–6 dB in gaps and on section cards.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Sound-design palette</h3>
+        <ul>
+          <li><b>Whoosh</b> (short, airy) for quadrant wipes and windows.</li>
+          <li><b>UI click</b> (soft, high) for each chip and node.</li>
+          <li><b>Confirm chime</b> (two-note, major) for every success state.</li>
+          <li><b>Tick run</b> for counters, ending on a confirm.</li>
+          <li><b>Lock</b> (metallic, tight) for the shield rings and the logo quarters.</li>
+          <li><b>Alert blip</b> (amber) and <b>scan sweep</b> for the incident flow only.</li>
+          <li><b>Impact / sub hit</b> on section cards and drops.</li>
+          <li><b>Room tone</b>: light office ambience under footage at −30 dB for continuity.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="scroll"><table class="map" id="cueTable"><thead><tr><th>Time</th><th>Bar</th><th>Music</th><th>Picture that lands on it</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="part open" id="open">
+    <div class="part-head"><span class="lbl">Before production</span><h2>Open items</h2></div>
+    <div class="panel">
+      <ul>
+        <li class="todo">Approved AWS and Google Cloud partner logos (only Microsoft is on disk).</li>
+        <li class="todo">IntelliXperience, IntelliAssure and BluForge Security Center screen recordings for the product UI frames (7.3, 8.4, 9.4).</li>
+        <li class="todo">Verified customer metrics for Stories 1 and 2 (slots 11.5 and 12.5).</li>
+        <li class="todo">Link for the closing QR code.</li>
+        <li class="todo">Consent from colleagues shown on screen; usage check for the Microsoft, Microsoft 365 and Copilot logos.</li>
+        <li class="todo">Music track choice (Part 5), with stems.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<script>
+const SHOTS = [{"s":1,"t0":0,"t1":3.75,"type":"footage","src":"SUNRISE","in":0.2,"speed":"100% (24 fps source)","frame":"Wide, slow 4% push-in toward the entrance","text":"","ui":"Four quarter-discs fly in from frame edges and lock onto the façade as the Quadra Q mark (anticipation 6f scale-down, action 14f, settle with 2% overshoot)","trans":"Hard cut on the downbeat","sfx":"Air swell; four soft 'tock' hits as the quarters lock; low thump on the final lock"},{"s":1,"t0":3.75,"t1":5,"type":"footage","src":"C5548","in":2,"speed":"50%","frame":"Medium, glass door in foreground","text":"","ui":"","trans":"Door edge passes camera as a natural wipe","sfx":"Glass door swish"},{"s":1,"t0":5,"t1":6.25,"type":"footage","src":"C5351","in":1,"speed":"50%","frame":"Detail, rack focus bicycle → statue","text":"","ui":"","trans":"Cut","sfx":""},{"s":1,"t0":6.25,"t1":7.5,"type":"footage","src":"C5517","in":1,"speed":"50%","frame":"Wide office, orange wall","text":"","ui":"","trans":"Cut","sfx":""},{"s":1,"t0":7.5,"t1":8.75,"type":"footage","src":"C5444","in":12,"speed":"50%","frame":"Medium three-shot, 115% crop on faces","text":"","ui":"","trans":"Cut","sfx":""},{"s":1,"t0":8.75,"t1":10,"type":"footage","src":"C5458","in":5,"speed":"50%","frame":"Close on hands typing (2× crop from 4K)","text":"","ui":"Window: a rounded inset of the next shot slides up from bottom-right in the last 8 frames","trans":"Window expands to full frame on the beat","sfx":"Whoosh-in, short"},{"s":1,"t0":10,"t1":13.75,"type":"footage","src":"C5473","in":30,"speed":"50%","frame":"Tracking across the open office","text":"Cloud · AI · Security","ui":"Three chips pop in on the beats at 10.5s, 11.1s, 11.75s, each with a blue pulse ring on confirm","trans":"Foreground partition passes camera, used as a wipe","sfx":"Three UI clicks on the chips"},{"s":1,"t0":13.75,"t1":16.25,"type":"footage","src":"C5359","in":1,"speed":"50%","frame":"Leader walks toward camera (the 'architect' thread starts)","text":"Ambition into measurable outcomes","ui":"Key line rises word by word lower-left","trans":"Quadrant wipe: a white quarter-disc sweeps clockwise from top-left","sfx":"Riser into wipe"},{"s":1,"t0":16.25,"t1":20,"type":"card","frame":"White section card","text":"Building the Intelligent Enterprise.","ui":"Large navy type with live footage (C5473) visible inside the letters, holds, then the Q quarter-disc wipe reveals Scene 2","trans":"Quadrant wipe out","sfx":"Impact hit on 16.25s, whoosh on wipe"},{"s":2,"t0":20,"t1":22.5,"type":"footage","src":"C5473","in":16,"speed":"50%","frame":"Medium on monitors with live UI","text":"02 · Cloud Modernization — headline 'Cloud Modernization.'","ui":"Chapter tag slides in top-left; headline rises","trans":"Cut","sfx":"Soft whoosh on tag"},{"s":2,"t0":22.5,"t1":24.375,"type":"footage","src":"C5472","in":30,"speed":"50%","frame":"Dark-UI monitor, 120% punch-in on beat","text":"","ui":"","trans":"Cut","sfx":""},{"s":2,"t0":24.375,"t1":26.25,"type":"footage","src":"C5544","in":12,"speed":"50%","frame":"Dashboards, over-shoulder","text":"Scalable · Resilient · Ready for what's next","ui":"Chips land on 'scalable' (24.8s) and the next two beats","trans":"Cut","sfx":"Three clicks"},{"s":2,"t0":26.25,"t1":27.5,"type":"footage","src":"C5450","in":12,"speed":"50%","frame":"Engineer at desk","text":"","ui":"Window inset of partner card slides in","trans":"Window expands","sfx":"Whoosh"},{"s":2,"t0":27.5,"t1":30,"type":"card","frame":"White card","text":"Microsoft Azure · AWS · Google Cloud","ui":"Three logo tiles drop in on consecutive beats, each confirms with a tick and a 4% bounce","trans":"Quadrant wipe","sfx":"Three ticks; whoosh"},{"s":3,"t0":30,"t1":32.5,"type":"footage","src":"C5531","in":5,"speed":"50%","frame":"Over-shoulder on spreadsheet, 110% crop","text":"03 · AI & Data — headline 'AI & Data Transformation.'","ui":"Chapter tag + headline","trans":"Cut","sfx":""},{"s":3,"t0":32.5,"t1":34.375,"type":"footage","src":"C5444","in":9,"speed":"50%","frame":"Pointing at the screen","text":"Enterprise data into intelligence","ui":"Data dots stream from left edge into the screen","trans":"Cut","sfx":"Data blips"},{"s":3,"t0":34.375,"t1":36.875,"type":"ui","src":"C5458","in":14,"speed":"50%","frame":"Typing, background blurred behind a glass card","text":"Isolated experiments → Everyday operations ✓","ui":"State flip: grey 'Isolated experiments' pill, arrow draws, blue 'Everyday operations' pill confirms with a tick on 'everyday' (35.7s)","trans":"Cut","sfx":"Riser, then confirm chime"},{"s":3,"t0":36.875,"t1":38.125,"type":"footage","src":"C5472","in":18,"speed":"50%","frame":"Close on dark UI","text":"","ui":"","trans":"Cut","sfx":""},{"s":3,"t0":38.125,"t1":40,"type":"footage","src":"C5460","in":9,"speed":"50%","frame":"Mentor and colleague","text":"","ui":"","trans":"Foreground wipe into Scene 4","sfx":"Whoosh"},{"s":4,"t0":40,"t1":42.5,"type":"footage","src":"C5544","in":2,"speed":"50%","frame":"Headset, dashboards","text":"04 · Cybersecurity — headline 'Enterprise Cybersecurity.'","ui":"Chapter tag + headline","trans":"Cut","sfx":""},{"s":4,"t0":42.5,"t1":43.75,"type":"footage","src":"C5472","in":8,"speed":"50%","frame":"Dark UI, 120% punch-in","text":"Proactive defence","ui":"Shield graphic starts: ring 1 locks on 'proactive' (42.6s)","trans":"Cut (shield layer stays on top across the next cuts)","sfx":"Lock click"},{"s":4,"t0":43.75,"t1":45,"type":"footage","src":"C5452","in":6,"speed":"50%","frame":"Headset, green wall","text":"Continuous monitoring","ui":"Ring 2 locks on 'continuous' (43.7s)","trans":"Cut","sfx":"Lock click"},{"s":4,"t0":45,"t1":46.25,"type":"footage","src":"C5473","in":24,"speed":"50%","frame":"Monitors, tracking","text":"","ui":"Scan line sweeps the shield","trans":"Cut","sfx":"Scan sweep"},{"s":4,"t0":46.25,"t1":50,"type":"footage","src":"C5452","in":18,"speed":"50%","frame":"Close profile","text":"Protection in every layer ✓","ui":"Ring 3 locks on 'every layer' (46.7s), shield fills blue and shows a tick","trans":"Foreground wipe","sfx":"Confirm chime, low hit"},{"s":5,"t0":50,"t1":52.5,"type":"footage","src":"C5444","in":2,"speed":"50%","frame":"Three colleagues at the screen","text":"05 · Workforce Transformation — headline","ui":"Chapter tag + headline","trans":"Cut","sfx":""},{"s":5,"t0":52.5,"t1":53.75,"type":"footage","src":"C5538","in":12,"speed":"50%","frame":"Colleague helping colleague","text":"Secure, AI-enabled productivity","ui":"Microsoft 365 and Copilot logo tile slides up bottom-right on 'secure, AI' (53.3s)","trans":"Cut","sfx":"Click"},{"s":5,"t0":53.75,"t1":55,"type":"footage","src":"C5485","in":14,"speed":"50%","frame":"Training session through glass","text":"","ui":"","trans":"Cut","sfx":""},{"s":5,"t0":55,"t1":56.25,"type":"footage","src":"C5460","in":15,"speed":"50%","frame":"Mentoring at screen","text":"In the flow of work","ui":"Key line lower-left","trans":"Cut","sfx":""},{"s":5,"t0":56.25,"t1":57.5,"type":"footage","src":"C5504","in":2,"speed":"50%","frame":"Row of colleagues typing","text":"","ui":"","trans":"Cut","sfx":""},{"s":5,"t0":57.5,"t1":60,"type":"footage","src":"C5396","in":12,"speed":"100% → 40% ramp","frame":"Meeting room smiles","text":"","ui":"Speed ramp into slow motion","trans":"Quadrant wipe on the drop","sfx":"Riser into 1:00 drop"},{"s":6,"t0":60,"t1":61.25,"type":"card","frame":"White section card","text":"Why Quadra","ui":"Type slams in at 104% then settles; wipe out after 2 beats","trans":"Quadrant wipe","sfx":"Drop hit"},{"s":6,"t0":61.25,"t1":65,"type":"footage","src":"SUNRISE","in":0,"speed":"100%","frame":"Building at sunrise, slow push","text":"25 Years","ui":"Counter 0 → 25 on 'twenty-five' (61.0s), progress line draws under it","trans":"Cut","sfx":"Counter ticks, confirm on 25"},{"s":6,"t0":65,"t1":70,"type":"footage","src":"C5527","in":0.5,"speed":"50%","frame":"Slow slide along the award shelf","text":"100+ Awards","ui":"Counter on 'recognized' (65.4s)","trans":"Cut","sfx":"Ticks, confirm"},{"s":6,"t0":70,"t1":71.875,"type":"footage","src":"C5450","in":1,"speed":"50%","frame":"Wide team","text":"1,000+ Certifications","ui":"Counter on 'certified' (70.3s)","trans":"Window to partner card","sfx":"Ticks, confirm"},{"s":6,"t0":71.875,"t1":75,"type":"card","frame":"White card","text":"Microsoft · AWS · Google Cloud","ui":"Partner badges land on 'partnerships' (71.7s) and 'Microsoft' (72.7s)","trans":"Quadrant wipe","sfx":"Three ticks"},{"s":6,"t0":75,"t1":78.75,"type":"footage","src":"C5363","in":6,"speed":"50%","frame":"The leader and colleague in conversation","text":"The people who architect the solution remain accountable","ui":"Key line on 'the people who' (77.0s)","trans":"Cut","sfx":""},{"s":6,"t0":78.75,"t1":85,"type":"footage","src":"C5515","in":6,"speed":"50%","frame":"Wide office","text":"3,000+ Customers, then 25 · 100+ · 1,000+ · 3,000+","ui":"Final counter, then all four figures line up as a recap row (confirmation state)","trans":"Foreground wipe","sfx":"Ticks, four soft hits"},{"s":7,"t0":85,"t1":89.375,"type":"footage","src":"C5504","in":2,"speed":"50%","frame":"Row of colleagues","text":"07 · IntelliXperience — 'Technology that works for the people using it'","ui":"Chapter tag + key line","trans":"Window to product card","sfx":"Whoosh"},{"s":7,"t0":89.375,"t1":91.875,"type":"card","frame":"White product card","text":"IntelliXperience logo","ui":"Icon pops (anticipation squash, action, overshoot), wordmark wipes on at 'IntelliXperience' (90.0s)","trans":"Logo shrinks into the corner tile","sfx":"Bright 'sparkle' confirm"},{"s":7,"t0":91.875,"t1":97.5,"type":"ui","src":"C5473","in":36,"speed":"50%","frame":"Monitors, blurred behind a floating glass device frame","text":"","ui":"Product walkthrough in a floating frame (needs the approved IntelliXperience screen recording); cursor clicks show press → highlight → success states","trans":"Cut","sfx":"UI clicks"},{"s":7,"t0":97.5,"t1":100,"type":"footage","src":"C5444","in":15,"speed":"50%","frame":"Colleagues at screen","text":"Simpler interactions ✓ Productive teams ✓ Connected experiences ✓","ui":"Checklist confirms on 'simpler' (98.0s) and the next two beats","trans":"Cut","sfx":"Three ticks"},{"s":7,"t0":100,"t1":102.5,"type":"footage","src":"C5538","in":20,"speed":"50%","frame":"Helping colleague","text":"Supporting the way business gets done","ui":"","trans":"Cut","sfx":""},{"s":7,"t0":102.5,"t1":110,"type":"footage","src":"C5460","in":15,"speed":"50%","frame":"Mentoring, slow push","text":"Built Around the Enterprise Experience.","ui":"Headline + IntelliXperience logo tile","trans":"Quadrant wipe","sfx":"Whoosh"},{"s":8,"t0":110,"t1":114.375,"type":"footage","src":"C5363","in":14,"speed":"50%","frame":"Leaders in conversation","text":"08 · IntelliAssure — 'Confidence in technology is essential'","ui":"Chapter tag + key line","trans":"Window to product card","sfx":""},{"s":8,"t0":114.375,"t1":116.875,"type":"card","frame":"Navy product card","text":"IntelliAssure logo","ui":"Shield icon draws, wordmark wipes on at 'IntelliAssure' (115.0s)","trans":"Logo shrinks into the corner tile","sfx":"Confirm"},{"s":8,"t0":116.875,"t1":118.75,"type":"footage","src":"C5514","in":10,"speed":"50%","frame":"White office, wide","text":"","ui":"","trans":"Cut","sfx":""},{"s":8,"t0":118.75,"t1":122.5,"type":"ui","src":"C5458","in":14,"speed":"50%","frame":"Typing, blurred behind glass panel","text":"Reliability ✓ Control ✓ Accountability ✓","ui":"Three status rows go Checking (grey spinner) → Verified (blue tick), starting on 'reliability' (119.4s)","trans":"Cut","sfx":"Spinner ticks, three confirms"},{"s":8,"t0":122.5,"t1":126.25,"type":"footage","src":"C5393","in":4,"speed":"50%","frame":"The leader walking the floor","text":"","ui":"","trans":"Cut","sfx":""},{"s":8,"t0":126.25,"t1":135,"type":"footage","src":"C5353","in":6,"speed":"50%","frame":"Leader watching the team","text":"Foundations ready to support the business → 'Confidence for Enterprise Operations.'","ui":"Key line on 'foundations' (126.2s), then headline + IntelliAssure tile","trans":"Hard cut to black","sfx":"Reverse cymbal into 2:15 drop"},{"s":9,"t0":135,"t1":137.5,"type":"card","frame":"Navy card, punch-ins of C5472 flash between words","text":"Cyber threats don't stop.","ui":"Words stamp in one per beat","trans":"Cut","sfx":"Drop hit, stabs on each word"},{"s":9,"t0":137.5,"t1":139.375,"type":"card","frame":"Navy card","text":"Neither should your defence.","ui":"Shield outline draws around the line","trans":"Flash to white","sfx":"Hit"},{"s":9,"t0":139.375,"t1":144.375,"type":"card","frame":"White card","text":"BluForge — Microsoft MISA-verified managed cyber-defence","ui":"Logo scales in on 'Meet' (139.2s) with two pulse rings, then the line","trans":"Window to SOC","sfx":"Confirm, pulse"},{"s":9,"t0":144.375,"t1":151.25,"type":"ui","src":"C5544","in":13,"speed":"50%","frame":"Analyst with dashboards behind a glass incident panel","text":"Alert detected → Investigating → Contained → Resolved ✓","ui":"Incident flow: amber alert pulses on '24-by-7' (145.0s), scan on 'threat detection' (147.5s), shield locks on 'incident response' (149.4s), green Resolved at 150.6s","trans":"Cut","sfx":"Alert blip, scan, lock, success chime"},{"s":9,"t0":151.25,"t1":152.5,"type":"footage","src":"C5472","in":2,"speed":"50%","frame":"Dark UI","text":"","ui":"","trans":"Cut","sfx":""},{"s":9,"t0":152.5,"t1":154.375,"type":"footage","src":"C5473","in":4,"speed":"50%","frame":"Open office with screens","text":"Visibility + accountability","ui":"","trans":"Cut","sfx":""},{"s":9,"t0":154.375,"t1":160,"type":"footage","src":"C5452","in":22,"speed":"50%","frame":"Headset profile, slow push","text":"Identity · Data · The enterprise as one → 'BluForge — One Unified Defence.'","ui":"Chips on 'From identity' (154.5s), then headline + BluForge tile","trans":"Quadrant wipe","sfx":"Clicks, whoosh"},{"s":10,"t0":160,"t1":162.5,"type":"footage","src":"C5353","in":1,"speed":"50%","frame":"Leader watching team (architect thread)","text":"10 · Quadra AIR","ui":"Chapter tag","trans":"Cut","sfx":""},{"s":10,"t0":162.5,"t1":165.625,"type":"footage","src":"C5359","in":5,"speed":"50%","frame":"Leader walking","text":"Changing the way work gets done","ui":"Key line on 'It happens' (163.8s)","trans":"Window to card","sfx":""},{"s":10,"t0":165.625,"t1":168.75,"type":"card","frame":"Navy card","text":"Quadra AIR — AI-In-Residence","ui":"Icon tile pops, name and line rise on 'Quadra AIR' (166.5s)","trans":"Quadrant wipe","sfx":"Confirm"},{"s":10,"t0":168.75,"t1":173.75,"type":"footage","src":"C5396","in":1,"speed":"50%","frame":"Meeting room with the customer team","text":"Engineers directly in your enterprise","ui":"","trans":"Cut","sfx":""},{"s":10,"t0":173.75,"t1":179.375,"type":"ui","src":"C5460","in":15,"speed":"50%","frame":"Mentoring, blurred behind a glass workflow panel","text":"Identify opportunities → Redesign workflows → Build governed AI → Production ✓","ui":"Nodes light in order on 'identify' (174.1s), 'redesign' (175.6s), 'build governed' (177.1s); a connector line draws between them and Production confirms at 178.75s","trans":"Cut","sfx":"Node clicks, success chime"},{"s":10,"t0":179.375,"t1":185,"type":"footage","src":"C5472","in":22,"speed":"50%","frame":"Mentoring at dark UI","text":"Engineering AI Into the Business. + Real workflows · Real adoption · Real business outcomes","ui":"Headline, then chips on 179.8s, 180.8s, 182.1s","trans":"Dip to white","sfx":"Three hits on the chips"},{"s":11,"t0":185,"t1":188.75,"type":"footage","src":"C5556","in":0.3,"speed":"50%","frame":"Reflective colleague","text":"11 · Customer Impact — Story 1 | tracker: Business Challenge","ui":"Tracker appears with 'Business Challenge' active; key line 'Disconnected systems slow decisions'","trans":"Cut","sfx":"Soft piano note"},{"s":11,"t0":188.75,"t1":191.25,"type":"footage","src":"C5353","in":6,"speed":"50%","frame":"Leader watching team","text":"More operational effort","ui":"","trans":"Tracker transition","sfx":""},{"s":11,"t0":191.25,"t1":196.25,"type":"footage","src":"C5485","in":18,"speed":"50%","frame":"Workshop through glass","text":"Quadra Solution: Cloud modernization · Data foundations · Managed operations","ui":"Progress line fills to 'Quadra Solution' on 'Quadra brings' (191.8s), step 1 gets a tick; chips land on the beats","trans":"Cut","sfx":"Progress swish, tick, clicks"},{"s":11,"t0":196.25,"t1":201.25,"type":"footage","src":"C5514","in":20,"speed":"50%","frame":"White office wide","text":"Outcome: Less complexity · Better visibility · Faster decisions","ui":"Line fills to 'Outcome' on 'Helping' (197.3s), confirm pulse","trans":"Cut","sfx":"Success chime"},{"s":11,"t0":201.25,"t1":205,"type":"footage","src":"C5396","in":12,"speed":"50%","frame":"Meeting smiles","text":"[Verified customer metric]","ui":"Reserved slot for the verified customer result (script note)","trans":"Quadrant wipe","sfx":""},{"s":12,"t0":205,"t1":208.75,"type":"footage","src":"C5544","in":4,"speed":"50%","frame":"Analyst at dashboards","text":"12 · Customer Impact — Story 2 | tracker: Business Challenge","ui":"Key line 'Security and continuity can't be an afterthought'","trans":"Cut","sfx":""},{"s":12,"t0":208.75,"t1":211.25,"type":"footage","src":"C5472","in":34,"speed":"50%","frame":"Dark UI close","text":"","ui":"","trans":"Tracker transition","sfx":""},{"s":12,"t0":211.25,"t1":216.25,"type":"footage","src":"C5452","in":12,"speed":"50%","frame":"Headset profile","text":"Security Solution: Proactive protection · Continuous monitoring · Accountable managed services","ui":"Line fills to 'Security Solution' on 'Quadra combines' (211.6s)","trans":"Cut","sfx":"Swish, tick, clicks"},{"s":12,"t0":216.25,"t1":221.25,"type":"footage","src":"C5369","in":2,"speed":"50%","frame":"Two leaders (cut before they face camera)","text":"Outcome: Stronger resilience · Confident response","ui":"Line fills to 'Outcome' on 'Helping' (217.5s)","trans":"Cut","sfx":"Success chime"},{"s":12,"t0":221.25,"t1":225,"type":"footage","src":"C5515","in":14,"speed":"50%","frame":"Wide office","text":"Focused on what comes next · [Verified customer result]","ui":"","trans":"Quadrant wipe","sfx":"Riser (music rebuilds)"},{"s":13,"t0":225,"t1":228.125,"type":"card","frame":"White section card","text":"Experience Our CoE","ui":"Footage-filled type (C5485), wipe out","trans":"Quadrant wipe","sfx":"Hit"},{"s":13,"t0":228.125,"t1":231.25,"type":"footage","src":"C5548","in":6,"speed":"50%","frame":"Colleague enters through glass door","text":"Centre of Excellence for Microsoft AI and Security","ui":"Microsoft logo tile on 'Welcome' (228.9s)","trans":"Door as natural wipe","sfx":"Door swish"},{"s":13,"t0":231.25,"t1":235,"type":"footage","src":"C5485","in":6,"speed":"50%","frame":"Presentation through glass","text":"Ideas become live demonstrations","ui":"","trans":"Cut","sfx":""},{"s":13,"t0":235,"t1":237.5,"type":"footage","src":"C5396","in":6,"speed":"50%","frame":"Meeting table","text":"Technology meets real business challenges","ui":"","trans":"Cut","sfx":""},{"s":13,"t0":237.5,"t1":240.625,"type":"footage","src":"C5485","in":20,"speed":"50%","frame":"Room wide","text":"","ui":"","trans":"Cut","sfx":""},{"s":13,"t0":240.625,"t1":243.125,"type":"footage","src":"C5473","in":36,"speed":"50%","frame":"Screens with live UI","text":"Practical applications of AI","ui":"Chip on 'Discover' (241.0s)","trans":"Cut","sfx":"Click"},{"s":13,"t0":243.125,"t1":245.625,"type":"footage","src":"C5544","in":9,"speed":"50%","frame":"Dashboards","text":"Modern security capabilities","ui":"Chip on 'Experience modern' (243.7s)","trans":"Cut","sfx":"Click"},{"s":13,"t0":245.625,"t1":246.875,"type":"footage","src":"C5538","in":4,"speed":"50%","frame":"Helping colleague","text":"Workshops","ui":"Word chip","trans":"Cut","sfx":"Click"},{"s":13,"t0":246.875,"t1":248.125,"type":"footage","src":"C5460","in":9,"speed":"50%","frame":"Mentoring","text":"Conversations","ui":"Word chip","trans":"Cut","sfx":"Click"},{"s":13,"t0":248.125,"t1":251.25,"type":"footage","src":"C5458","in":8,"speed":"50%","frame":"Two engineers","text":"Problem-solving","ui":"Word chip","trans":"Cut","sfx":"Click"},{"s":13,"t0":251.25,"t1":260,"type":"footage","src":"C5517","in":3,"speed":"50%","frame":"Wide office; three window insets of CoE moments arrange into a grid, then clear","text":"Experience Innovation. Explore What's Possible.","ui":"Headline on 'Because' (251.6s)","trans":"Quadrant wipe","sfx":"Whoosh, rise into final chorus"},{"s":14,"t0":260,"t1":265.625,"type":"footage","src":"C5359","in":2,"speed":"50%","frame":"Leader walks toward camera (architect thread returns)","text":"14 · People Behind the Solutions — 'Responsible for making it work'","ui":"Chapter tag + key line","trans":"Cut on 'Architects'","sfx":""},{"s":14,"t0":265.625,"t1":266.25,"type":"footage","src":"C5363","in":20,"speed":"50%","frame":"Leaders","text":"ARCHITECTS.","ui":"Bold one-word title top-left, stamps on the beat","trans":"Cut","sfx":"Hit"},{"s":14,"t0":266.25,"t1":267.5,"type":"footage","src":"C5458","in":8,"speed":"50%","frame":"Engineers","text":"ENGINEERS.","ui":"Word bottom-right","trans":"Cut","sfx":"Hit"},{"s":14,"t0":267.5,"t1":268.75,"type":"footage","src":"C5544","in":15,"speed":"50%","frame":"Security analyst","text":"SECURITY SPECIALISTS.","ui":"Word top-left","trans":"Cut","sfx":"Hit"},{"s":14,"t0":268.75,"t1":270,"type":"footage","src":"C5444","in":19,"speed":"50%","frame":"Colleagues at screen","text":"AI INNOVATORS.","ui":"Word bottom-right","trans":"Cut","sfx":"Hit"},{"s":14,"t0":270,"t1":273.75,"type":"footage","src":"C5538","in":25,"speed":"50%","frame":"Helping colleague","text":"Listen · Collaborate · Stay accountable","ui":"Chips on 'People who' (270.3s) and the next beats","trans":"Cut","sfx":"Clicks"},{"s":14,"t0":273.75,"t1":280,"type":"footage","src":"C5504","in":8,"speed":"50%","frame":"Row of colleagues, slow push","text":"Expertise That Delivers. People Who Stay Accountable.","ui":"Headline on 'That's the strength' (274.5s)","trans":"Quadrant wipe","sfx":"Whoosh"},{"s":15,"t0":280,"t1":283.75,"type":"footage","src":"C5515","in":18,"speed":"50%","frame":"Wide office","text":"An ambition worth building toward","ui":"Key line","trans":"Cut","sfx":""},{"s":15,"t0":283.75,"t1":287.5,"type":"footage","src":"SUNRISE","in":0.2,"speed":"100%","frame":"Building at sunrise (mirrors the opening)","text":"Cloud. → AI. → Security.","ui":"Bold words at corners on 'cloud', 'AI', 'security' as the voiceover says them","trans":"Window to CTA","sfx":"Three hits"},{"s":15,"t0":287.5,"t1":290.625,"type":"ui","frame":"Building blurred behind a white glass panel","text":"Start a conversation","ui":"CTA button: hover glow (anticipation), press to 96% on 'the next step' (287.7s), ripple, tick, button opens into website and email chips (success)","trans":"Quadrant wipe","sfx":"Press click, ripple, success chime"},{"s":15,"t0":290.625,"t1":296.25,"type":"logo","frame":"Quadra blue ground","text":"Quadra — Architecting Ambition. Cloud. AI. Security. One Architect.","ui":"Four quarter-discs drop in and bounce on the beats, lock into the Q mark on 'Quadra' (292.1s), wordmark wipes on, tagline and strapline rise","trans":"Hold","sfx":"Four bounces, final hit, shimmer"},{"s":15,"t0":296.25,"t1":300,"type":"logo","frame":"Navy end card","text":"www.quadrasystems.net · ai@quadrasystems.net · QR code","ui":"Contact rows slide in, QR scales in, fade to navy which matches frame 1 for the loop","trans":"Fade to navy (loop)","sfx":"Music tail and reverb out"}];
+const SCENES = [
+ { t:"00:00–00:20", title:"Welcome to Quadra", music:"Intro → build. Pad and plucked arp, filtered; kick enters at 0:10 under 'At Quadra'; impact on the section card at 0:16.25.", e:5,
+   vo:"Technology is evolving faster than ever. But real progress isn't measured by what technology can do. It's measured by what businesses achieve with it. At Quadra, we connect cloud, AI, and security to turn enterprise ambition into measurable outcomes." },
+ { t:"00:20–00:30", title:"Cloud Modernization", music:"Verse A, hats on eighths. Cuts every 2 beats.", e:6,
+   vo:"We modernize cloud foundations, helping enterprises build infrastructure that is scalable, resilient, and ready for what's next." },
+ { t:"00:30–00:40", title:"AI & Data", music:"Verse A continues; small riser into the state flip at 0:35.7.", e:6,
+   vo:"We turn enterprise data into intelligence, bringing AI from isolated experiments into everyday business operations." },
+ { t:"00:40–00:50", title:"Cybersecurity", music:"Verse A, bass tightens; lock hits on the shield rings.", e:7,
+   vo:"We secure digital environments with proactive defence, continuous monitoring, and protection built into every layer." },
+ { t:"00:50–01:00", title:"Workforce Transformation", music:"Pre-chorus; riser from 0:57.5 under the speed ramp.", e:7,
+   vo:"And we empower people to work smarter, bringing secure, AI-enabled productivity into the flow of work." },
+ { t:"01:00–01:25", title:"Why Quadra", music:"DROP 1 at 1:00: full chorus. Counters land on downbeats.", e:8,
+   vo:"For twenty-five years, Quadra has helped enterprises navigate technological change. Recognized across leading global technology ecosystems, we bring deep expertise, certified capabilities, and partnerships spanning Microsoft, AWS, and Google Cloud. Our promise is simple: the people who architect the solution remain accountable for its success." },
+ { t:"01:25–01:50", title:"IntelliXperience", music:"Verse B, lighter drums to give the product room.", e:7,
+   vo:"Enterprise transformation succeeds when technology works for the people using it. IntelliXperience is part of Quadra's approach to making enterprise experiences more connected and effective. Bringing the focus back to what matters: simpler interactions, productive teams, and technology that supports the way business gets done." },
+ { t:"01:50–02:15", title:"IntelliAssure", music:"Verse B; reverse cymbal from 2:13.", e:7,
+   vo:"As enterprises evolve, confidence in their technology becomes essential. IntelliAssure reflects Quadra's focus on building enterprise solutions with reliability, control, and accountability in mind. Because moving forward with technology should also mean knowing that the foundations behind it are ready to support the business." },
+ { t:"02:15–02:40", title:"BluForge", music:"DROP 2 at 2:15: biggest, darker bass, stabs on 'don't stop'. Peak energy.", e:9,
+   vo:"Cyber threats don't stop. Neither should your defence. Meet BluForge, Quadra's Microsoft MISA-verified managed cyber-defence offering. Combining 24-by-7 security operations, intelligent threat detection, and coordinated incident response, BluForge brings visibility and accountability together. From identity to data, protecting the enterprise as one." },
+ { t:"02:40–03:05", title:"Quadra AIR", music:"Chorus sustain; three hits on 'Real workflows. Real adoption. Real business outcomes.'", e:8,
+   vo:"AI transformation doesn't happen by adding another tool. It happens by changing the way work gets done. Quadra AIR — AI-In-Residence — brings engineers directly into your enterprise. Working alongside your teams, we identify opportunities, redesign workflows, and build governed AI solutions for production. Real workflows. Real adoption. Real business outcomes." },
+ { t:"03:05–03:25", title:"Customer Impact — Story 1", music:"BREAKDOWN: kick out, piano and pad; tracker sounds carry the rhythm.", e:4,
+   vo:"Across complex enterprise environments, disconnected systems can slow decisions and increase operational effort. Quadra brings cloud modernization, data foundations, and managed operations together. Helping teams reduce complexity, improve visibility, and create the foundation for faster, more informed decisions.", note:"Add verified customer metrics when available." },
+ { t:"03:25–03:45", title:"Customer Impact — Story 2", music:"Breakdown continues; riser from 3:43.", e:5,
+   vo:"For organizations managing critical operations, security and business continuity cannot be an afterthought. Quadra combines proactive protection, continuous monitoring, and accountable managed services. Helping enterprises strengthen resilience, respond with confidence, and stay focused on what comes next.", note:"Add verified customer results." },
+ { t:"03:45–04:20", title:"Experience Our CoE", music:"Rebuild: filter opens over 8 bars, full drums back by 4:00.", e:7,
+   vo:"Innovation becomes meaningful when you can experience it. Welcome to the Quadra Centre of Excellence for Microsoft AI and Security. A space where ideas become live demonstrations, technology meets real business challenges, and teams come together to explore what's possible. Discover practical applications of AI. Experience modern security capabilities. Engage with our experts through workshops, conversations, and collaborative problem-solving. Because the best way to understand transformation is to see it in action." },
+ { t:"04:20–04:40", title:"People Behind the Solutions", music:"FINAL CHORUS: hits on Architects / Engineers / Security specialists / AI innovators.", e:9,
+   vo:"Behind every solution is a team that understands the responsibility of making it work. Architects. Engineers. Security specialists. AI innovators. People who listen, collaborate, and remain accountable long after deployment. That's the strength behind Quadra." },
+ { t:"04:40–05:00", title:"Start a Conversation", music:"Pull back for the CTA, final hit on the logo lock (4:52), tail and reverb out to the loop.", e:6,
+   vo:"Every enterprise has an ambition worth building toward. Whether you're modernizing cloud, scaling AI, or strengthening security, the next step begins with a conversation. Let's architect what's next. Quadra. Architecting Ambition." },
+];
+
+const esc = s => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const fmt = s => { const m = Math.floor(s / 60), r = s - m * 60; return `${String(m).padStart(2, "0")}:${r.toFixed(2).padStart(5, "0")}`; };
+const beats = (a, b) => Math.round((b - a) / 0.625);
+const FILE = { SUNRISE: "s01-quadra-sunrise (1).mp4", C5556: "C5556 (1).MP4", C5538: "c5538.mp4" };
+
+function frame(sh, i, sceneNo, title) {
+  const n = String(i + 1).padStart(3, "0");
+  const plate = sh.src ? `<img class="plate" src="stills/s${n}.jpg" alt="" loading="lazy">` : "";
+  const txt = esc(sh.text);
+  if (sh.type === "footage") {
+    const tag = sceneNo > 1 && sceneNo < 15 ? `<div class="tag">${String(sceneNo).padStart(2, "0")} · ${esc(title)}</div>` : "";
+    // Thumbnail shows the line as it reads on screen, without the chapter prefix
+    let line = sh.text || "";
+    if (line.includes("|")) line = line.split("|").pop();
+    else if (/^\d+ · /.test(line) && line.includes(" — ")) line = line.split(" — ").slice(1).join(" — ");
+    line = line.replace(/^\s*(headline|tracker:)\s*/i, "").replace(/^'|'$/g, "").trim();
+    const ov = line ? `<div class="wash"></div><div class="ov">${esc(line)}</div>` : "";
+    return plate + ov + tag;
+  }
+  if (sh.type === "ui") {
+    return `<div class="frame blur" style="position:absolute;inset:0">${plate || ""}</div>${plate ? "" : `<div class="card-white"></div>`}<div class="glass">${txt}</div>`;
+  }
+  const t = sh.text || "";
+  let inner = esc(t);
+  if (/IntelliXperience logo/.test(t)) return `<div class="card-white"><img src="brand/intellixperience.png" alt="IntelliXperience"></div>`;
+  if (/IntelliAssure logo/.test(t)) return `<div class="card-navy"><img src="brand/intelliassure.png" alt="IntelliAssure"></div>`;
+  if (/^BluForge/.test(t)) return `<div class="card-white" style="gap:3cqw"><img src="brand/bluforge-lockup.png" alt="BluForge" style="max-height:52%"><span style="font-size:3.6cqw">Microsoft MISA-verified managed cyber-defence</span></div>`;
+  if (/Quadra AIR/.test(t)) return `<div class="card-navy" style="gap:2cqw"><img src="brand/quadra-air.png" alt="" style="width:14%;background:#fff;border-radius:2cqw;padding:2cqw"><span>Quadra AIR</span><span style="font-size:4cqw;color:#7fb8ff">AI-In-Residence</span></div>`;
+  if (/Azure|Microsoft ·/.test(t)) return `<div class="card-white"><div style="display:flex;gap:2.5cqw;font-size:3.6cqw">${["Microsoft Azure", "AWS", "Google Cloud"].map(x => `<span style="background:#fff;border-top:.8cqw solid #1f6feb;border-radius:1.6cqw;padding:4cqw 3cqw;box-shadow:0 1.5cqw 4cqw rgba(10,29,59,.15);display:flex;align-items:center;gap:1.4cqw">${x === "Microsoft Azure" ? '<img src="brand/microsoft.svg" alt="" style="width:4cqw">' : ""}${x}</span>`).join("")}</div></div>`;
+  if (sh.type === "logo" && /Architecting/.test(t)) return `<div class="card-blue" style="gap:3cqw"><img src="brand/quadra-white.png" alt="Quadra" style="max-width:60%"><span style="font-size:5cqw">Architecting Ambition.</span><span style="font-size:3.2cqw;font-weight:600;opacity:.85">Cloud. AI. Security. One Architect.</span></div>`;
+  if (sh.type === "logo") return `<div class="card-navy" style="font-size:3.6cqw;font-weight:600;gap:2cqw"><span>www.quadrasystems.net</span><span>ai@quadrasystems.net</span><span style="width:16cqw;aspect-ratio:1;border:.5cqw dashed #7fb8ff;border-radius:1cqw;display:grid;place-items:center;font-size:2.6cqw;color:#7fb8ff">QR</span></div>`;
+  const navy = /Cyber threats|Neither/.test(t);
+  return `<div class="${navy ? "card-navy" : "card-white"}"><div class="quad"></div><span style="position:relative">${inner}</span></div>`;
+}
+
+document.getElementById("nShots").textContent = SHOTS.length;
+document.getElementById("avgLen").textContent = (300 / SHOTS.length).toFixed(2) + " s";
+
+const host = document.getElementById("scenes");
+SCENES.forEach((sc, k) => {
+  const no = k + 1;
+  const list = SHOTS.map((sh, i) => ({ sh, i })).filter(x => x.sh.s === no);
+  const t0 = list[0].sh.t0, t1 = list[list.length - 1].sh.t1;
+  host.insertAdjacentHTML("beforeend", `
+  <article class="scene" id="scene-${no}">
+    <div class="sc-head">
+      <div class="sc-title">
+        <span class="lbl">Scene ${no} of 15</span>
+        <h3><span>${String(no).padStart(2, "0")}</span>${esc(sc.title)}</h3>
+        <div class="mono muted">${sc.t.replace("–", " – ")} · ${t1 - t0} s · bars ${t0 / 2.5 + 1}–${t1 / 2.5} · ${list.length} shots</div>
+        <div class="meter" title="Energy ${sc.e}/10">${Array.from({ length: 10 }, (_, j) => `<i class="${j < sc.e ? "on" : ""}"></i>`).join("")}</div>
+        <p class="muted" style="font-size:13.5px"><b>Music:</b> ${esc(sc.music)}</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+        <span class="lbl">Voiceover (unchanged)</span>
+        <p class="vo">${esc(sc.vo)}</p>
+        ${sc.note ? `<p class="todo">Note: ${esc(sc.note)}</p>` : ""}
+      </div>
+    </div>
+    <div class="shots">${list.map(({ sh, i }, j) => `
+      <figure class="shot" style="margin:0">
+        <div class="frame">${frame(sh, i, no, sc.title)}</div>
+        <div class="sbody">
+          <div class="srow"><b>${no}.${j + 1}</b><span class="mono muted">${fmt(sh.t0)} · ${(sh.t1 - sh.t0).toFixed(2)} s · ${beats(sh.t0, sh.t1)} beats</span></div>
+          <dl class="kv">
+            ${sh.src ? `<dt>Footage</dt><dd><span class="mono">${esc(FILE[sh.src] || sh.src + ".MP4")}</span> @ ${sh.in}s · ${esc(sh.speed)}</dd>` : `<dt>Type</dt><dd>${sh.type === "ui" ? "UI panel" : sh.type === "logo" ? "Logo / end card" : "Graphic card"}</dd>`}
+            <dt>Framing</dt><dd>${esc(sh.frame)}</dd>
+            ${sh.text ? `<dt>On screen</dt><dd>${esc(sh.text)}</dd>` : ""}
+            ${sh.ui ? `<dt>Motion</dt><dd>${esc(sh.ui)}</dd>` : ""}
+            <dt>Out</dt><dd>${esc(sh.trans)}</dd>
+            ${sh.sfx ? `<dt>Sound</dt><dd>${esc(sh.sfx)}</dd>` : ""}
+          </dl>
+        </div>
+      </figure>`).join("")}
+    </div>
+  </article>`);
+});
+
+// Transaction flows
+const TX = [
+  ["Q-mark build on the façade", "1.1 · 0:00–0:03.75", "Quarters enter from the frame edges, 6-frame scale to 97%", "Fly to place along curved paths, 14 frames", "Lock with 2% overshoot, blue rim pulse, hold", "Four tocks, low thump"],
+  ["Window transition", "1.6, 2.4, 6.4, 7.1, 8.1, 9.3, 10.2, 15.2", "Rounded inset of the next shot slides up bottom-right (8 frames)", "Expands to full frame on the beat, 12 frames", "Corner radius resolves to 0; the old shot is gone", "Short whoosh"],
+  ["Quadrant wipe", "Every scene change", "White quarter-disc edge peeks in from top-left (4 frames)", "Sweeps clockwise around frame centre, 18 frames", "Fully revealed; chapter tag slides in", "Whoosh, impact on section cards"],
+  ["Chips and key lines", "Throughout", "Pill outline appears at 70% scale", "Fill and text pop to 100%, one per beat", "Blue dot pulses once", "Soft click per chip"],
+  ["Counters", "Scene 6", "Accent bar draws", "Number counts up over 1.3 s on the matching word", "Final digit lands on a beat with a 3% bounce", "Tick run, confirm"],
+  ["Experiment → operations", "3.3 · 0:34.4", "Grey 'Isolated experiments' pill dims", "Arrow draws left to right", "Blue 'Everyday operations' pill with tick on 'everyday'", "Riser, chime"],
+  ["Layered shield", "4.2–4.4 · 0:42.5–0:50", "Faint outline of three rings", "Rings lock on 'proactive', 'continuous', 'every layer'", "Shield fills blue with a tick", "Three locks, chime"],
+  ["Status checks", "8.4 · 1:58.75", "Three rows show a grey spinner", "Each row turns over in sequence from 'reliability'", "Blue ticks and the word 'Verified'", "Spinner ticks, three confirms"],
+  ["Incident flow", "9.4 · 2:24.4–2:31.3", "Amber alert pulses on '24-by-7'", "Scan on 'threat detection', shield on 'incident response'", "Card turns green: 'Resolved'", "Blip, scan sweep, lock, success chime"],
+  ["AI workflow", "10.5 · 2:53.75–2:59.4", "Four empty nodes and a dotted line", "Nodes light on 'identify', 'redesign', 'build governed'; line draws between them", "'Production' confirms with a tick", "Node clicks, chime"],
+  ["Customer-story tracker", "Scenes 11 and 12", "Next step outline brightens", "Progress line fills on 'Quadra brings / combines' and 'Helping'", "Previous step gets a tick, current step pulses", "Swish, tick"],
+  ["Call to action", "15.3 · 4:47.5", "Button glows", "Press to 96% on 'the next step', ripple", "Tick, then opens into website and email chips", "Click, ripple, chime"],
+  ["Logo build", "15.4 · 4:50.6", "Four quarter-discs drop from above", "Bounce once per beat into position", "Lock as the Q mark on 'Quadra', wordmark wipes on", "Four bounces, final hit, shimmer"],
+];
+document.querySelector("#txTable tbody").innerHTML = TX.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("");
+
+// Pace chart: average shot length per scene
+(() => {
+  const svg = document.getElementById("paceChart");
+  const W = 900, H = 220, L = 46, R = 12, T = 18, B = 34;
+  const data = SCENES.map((_, k) => { const z = SHOTS.filter(x => x.s === k + 1); return z.reduce((a, x) => a + (x.t1 - x.t0), 0) / z.length; });
+  const max = 4;
+  const bw = (W - L - R) / data.length;
+  let g = `<text x="${L}" y="12">Average shot length per scene (seconds)</text>`;
+  [0, 1, 2, 3, 4].forEach(v => { const y = H - B - (v / max) * (H - T - B); g += `<line class="grid" x1="${L}" x2="${W - R}" y1="${y}" y2="${y}"/><text x="${L - 8}" y="${y + 4}" text-anchor="end">${v}</text>`; });
+  data.forEach((v, i) => { const h = (v / max) * (H - T - B); const x = L + i * bw + 6; g += `<rect class="bar" x="${x}" y="${H - B - h}" width="${bw - 12}" height="${h}" rx="3"/><text x="${x + (bw - 12) / 2}" y="${H - B + 16}" text-anchor="middle">${i + 1}</text><text x="${x + (bw - 12) / 2}" y="${H - B - h - 5}" text-anchor="middle">${v.toFixed(1)}</text>`; });
+  g += `<text x="${W - R}" y="${H - 4}" text-anchor="end">Scene</text>`;
+  svg.innerHTML = g;
+})();
+
+// Energy chart and cue table
+const CUES = [
+  [0, "Intro: pad and filtered arp", "Building at sunrise; Q mark locks on the façade at 0:03.75"],
+  [10, "Kick enters", "Chips Cloud · AI · Security"],
+  [16.25, "Impact", "Section card 'Building the Intelligent Enterprise.'"],
+  [20, "Verse A", "Scene 2 quadrant wipe; chapter tags begin"],
+  [42.5, "Lock hits", "Shield rings on 'proactive', 'continuous', 'every layer'"],
+  [57.5, "Riser", "Speed ramp into slow motion"],
+  [60, "DROP 1: chorus", "'Why Quadra' card slams in; counters on downbeats"],
+  [85, "Verse B", "IntelliXperience logo pop at 1:29.4"],
+  [133.75, "Reverse cymbal", "Hard cut to navy"],
+  [135, "DROP 2: peak", "'Cyber threats don't stop.' stamps on beats"],
+  [144.4, "Arp doubles", "Incident flow alert → resolved"],
+  [179.75, "Three hits", "Real workflows · Real adoption · Real business outcomes"],
+  [185, "BREAKDOWN", "Customer stories, tracker sounds carry the rhythm"],
+  [222.5, "Riser", "Story 2 outcome into the CoE"],
+  [225, "Rebuild (filter opens)", "'Experience Our CoE' section card"],
+  [250, "Full drums back", "CoE headline and window grid"],
+  [260, "FINAL CHORUS", "Leader walks; role words hit at 4:25.6–4:28.9"],
+  [287.5, "Pull back", "Call-to-action press"],
+  [292.1, "Final hit", "Q mark locks on 'Quadra'"],
+  [297.5, "Tail and reverb", "Fade to navy; loops to frame 1"],
+];
+(() => {
+  const svg = document.getElementById("energyChart");
+  const W = 900, H = 220, L = 46, R = 12, T = 18, B = 34;
+  const x = t => L + (t / 300) * (W - L - R);
+  const y = e => H - B - (e / 10) * (H - T - B);
+  const pts = [];
+  let acc = 0;
+  SCENES.forEach((sc, k) => { const d = [20, 10, 10, 10, 10, 25, 25, 25, 25, 25, 20, 20, 35, 20, 20][k]; pts.push([acc, sc.e], [acc + d, sc.e]); acc += d; });
+  pts[0][1] = 3; pts[pts.length - 1][1] = 2;
+  const path = pts.map((p, i) => `${i ? "L" : "M"}${x(p[0]).toFixed(1)},${y(p[1]).toFixed(1)}`).join(" ");
+  let g = `<text x="${L}" y="12">Music energy (0–10) across 5:00, with key hits</text>`;
+  [0, 5, 10].forEach(v => g += `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 8}" y="${y(v) + 4}" text-anchor="end">${v}</text>`);
+  g += `<path class="area" d="${path} L${x(300)},${y(0)} L${x(0)},${y(0)} Z"/><path class="line" d="${path}"/>`;
+  [60, 135, 185, 260, 292.1].forEach(t => g += `<circle class="hit" cx="${x(t)}" cy="${y(t === 185 ? 4 : t === 292.1 ? 6 : t === 135 ? 9 : t === 260 ? 9 : 8) - 8}" r="5"/>`);
+  for (let m = 0; m <= 5; m++) g += `<text x="${x(m * 60)}" y="${H - B + 16}" text-anchor="middle">${m}:00</text>`;
+  svg.innerHTML = g;
+  document.querySelector("#cueTable tbody").innerHTML = CUES.map(([t, m, p]) => `<tr><td class="mono">${fmt(t)}</td><td class="mono">${Math.floor(t / 2.5) + 1}</td><td>${esc(m)}</td><td>${esc(p)}</td></tr>`).join("");
+})();
+</script>
